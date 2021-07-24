@@ -1,0 +1,9 @@
+# fonts
+
+- font-size : 16px
+- font-family : 
+
+# color pallete
+
+- violet : #8f00ff
+- dark violet : #1e002a

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Portfolio</title>
+    <!--AOS library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--CSS files-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/shapes.css">
+</head>
+<body>
+    <!--pointer trackers-->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <!--Parallax effects with different shapes-->
+    <div class="parallax1" id="parallax1">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="parallax2" id="parallax2">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="parallax3" id="parallax3">
+        <span></span>
+    </div>
+    <div class="parallax4" id="parallax4">
+        <span></span>
+    </div>
+    <div class="parallax5" id="parallax5">
+        <span></span>
+        <span></span>
+    </div>
+    <!--Welcome page-->
+    <header>
+        <div class="parallaxText" 
+            id="parallaxText" 
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="3000">
+            <h1>Welcome</h1>
+        </div>
+        <p data-aos="fade-up" data-aos-duration="3000">Siva is here to talk with you</p>
+        <p data-aos="fade-up" data-aos-duration="3000"><span>swipe up</span></p>
+        <div class="mouse" data-aos="fade-up" data-aos-duration="2000">
+            <span></span>
+        </div>
+    </header>
+    <section class="about">
+        <div class="part1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="0">
+            <div class="text">
+                <div class="hi"><p class="p">Hello, I am</p></div>
+                <h1>siva kumar katari</h1>
+                <p>A curious and creative web developer having in-depth knowledge in Javascript and React,I can design & implement UI for e-commerce,personnel softwares and portfolio using various technologies and frameworks.
+                </p>
+            </div>
+        </div>
+        <div class="part2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="0" data-aos-offset="300">
+            <img src="./media/profile-pic.jpg" alt="">
+        </div>
+    </section>
+    <!--Script for cursor tracker-->
+    <script>
+        let cursor = document.querySelector('.cursor');
+        let cursor2 = document.querySelector('.cursor2');
+        document.addEventListener("mousemove",function(e){
+            cursor.style.cssText = "left: "+ (e.clientX + 10) + "px; top: " + (e.clientY + 10) + "px;"
+            cursor2.style.cssText = "left: "+ (e.clientX + 20) + "px; top: " + (e.clientY + 20) + "px;"
+        })
+    </script>
+    <script src="./scripts/parallax.js"></script>
+    <script src="./scripts/AOS.js"></script>
+</body>
+</html>
