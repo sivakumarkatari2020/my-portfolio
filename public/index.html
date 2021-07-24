@@ -50,6 +50,7 @@
             <span></span>
         </div>
     </header>
+    <!--About section-->
     <section class="about">
         <div class="part1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="0">
             <div class="text">
@@ -63,6 +64,63 @@
             <img src="./media/profile-pic.jpg" alt="">
         </div>
     </section>
+    <!--Expertise section-->
+    <section class="expertise">
+        <div class="textWrap" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+            <h3>expertise</h3>
+            <p>I have a 2years of experienc with <span>JavaScript</span> and 1 year with <span>React</span>. I can design minimal layouts and even develop them suitable to every screen i.e., <span>Responsive</span>.I am a self taught student,I learn all these things by doing.</p>
+        </div>
+        <div class="dropdown">
+            <div class="accordion">
+                <div class="first-acc acc" id="first-acc" data-aos="fade-left">
+                    <div class="drop">
+                        <h1>01 . javascript</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow" id="down1" onclick="openAcc(event)">
+                    </div>
+                    <p class="down1">I have an work experienc of 2years with JavaScript,I am comfortable with ES6 features and Asynchrous programming model,Modules,Aroow functions and Higher order functions.</p>
+                </div>
+                <div class="second-acc acc" id="second-acc" data-aos="fade-left" data-aos-delay="500">
+                    <div class="drop">
+                        <h1>02 . css preprocessor - sass</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow" id="down2" onclick="openAcc(event)">
+                    </div>
+                    <p class="down2">From more than a year I am using SASS as my preprocessor for CSS,I love to work with it's functional style.</p>
+                </div>
+                <div class="third-acc acc" id="third-acc" data-aos="fade-left" data-aos-delay="1000">
+                    <div class="drop">
+                        <h1>03 . react</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow" id="down3" onclick="openAcc(event)">
+                    </div>
+                    <p class="down3">React is an amazing JavaScript library,since from the year I am using React and I can easily integrate real-time data with React state management library Redux.</p>
+                </div>
+                <div class="fourth-acc acc" id="fourth-acc" data-aos="fade-left" data-aos-delay="1500">
+                    <div class="drop">
+                        <h1>04 . api</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow" id="down4" onclick="openAcc(event)">
+                    </div>
+                    <p class="down4">I can easily work with both external and internal API's. I also know, how to create and arrange endpoints with REST API.</p>
+                </div>
+                <div class="fifth-acc acc" id="fifth-acc" data-aos="fade-left" data-aos-delay="2000">
+                    <div class="drop">
+                        <h1>05 . design</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow" id="down5" onclick="openAcc(event)">
+                    </div>
+                    <p class="down5">As a part of fronend I also known some design patterns, I can creatively make landing pages,portfolios,e-commerce sites etc.,</p>
+                </div>
+                <div class="sixth-acc acc" id="sixth-acc" data-aos="fade-left" data-aos-delay="2500">
+                    <div class="drop">
+                        <h1>06 . backend</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow" id="down6" onclick="openAcc(event)">
+                    </div>
+                    <p class="down6">I have some strong part with Data Structures, as a part of this I know C & Python languages,now I am learning Node. Along with these I know to work with MySql database.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--projects page-->
+    <section class="projects">
+
+    </section>
     <!--Script for cursor tracker-->
     <script>
         let cursor = document.querySelector('.cursor');
@@ -74,5 +132,6 @@
     </script>
     <script src="./scripts/parallax.js"></script>
     <script src="./scripts/AOS.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
