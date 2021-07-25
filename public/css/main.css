@@ -4,6 +4,9 @@
     box-sizing: border-box;
     user-select: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     width: 100%;
     max-width: 100vw;
@@ -228,6 +231,11 @@ header .mouse{
     transition: 0.5s;
     opacity: 0;
 }
+@media (max-width : 480px){
+    .part2 .profile .contact{
+        display: none;
+    }
+}
 .about .part2 .profile:hover .contact{
     opacity: 1;
 }
@@ -359,7 +367,7 @@ header .mouse{
     width: 90%;
     max-width: 600px;
     padding: 2rem;
-    margin-top: 25%;
+    margin-top: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -449,7 +457,7 @@ header .mouse{
 .projects .textWrap{
     align-items: flex-start;
     padding: 0 10%;
-    margin-top: 6rem;
+    margin-top: 8rem;
 }
 .projects .textWrap h3{
     font-size: 2rem;
@@ -478,6 +486,10 @@ header .mouse{
     line-height: 150%;
 }
 @media (max-width : 480px){
+    .projects .textWrap{
+        margin-top: 4rem;
+    }
+
     .projects .textWrap h3{
         font-size: 1.5rem;
         margin-bottom: 2rem;
@@ -613,6 +625,8 @@ header .mouse{
     justify-content: center;
     align-items: center;
     background: #8f00ff;
+    background: url('../media/footer-bg.svg') no-repeat center;
+    background-size: cover;
     color: #FFFFFF;
 }
 @media (max-width : 480px){
@@ -684,7 +698,7 @@ header .mouse{
     }
     .social-media a i:hover{
         transform: none;
-        padding: none;
+        padding: 0;
     }
 }
 .or-sep span{
@@ -696,7 +710,7 @@ header .mouse{
 }
 .or-sep .or-text{
     height: 50px;
-    background-color: #8f00ff;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;

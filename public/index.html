@@ -13,6 +13,7 @@
     <!--CSS files-->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/shapes.css">
+    <link rel="stylesheet" href="./css/floatings.css">
 </head>
 <body>
     <!--pointer trackers-->
@@ -38,7 +39,7 @@
         <span></span>
     </div>
     <!--Welcome page-->
-    <header>
+    <header id="welcome">
         <div class="parallaxText" 
             id="parallaxText" 
             data-aos="fade-up"
@@ -52,31 +53,58 @@
             <span></span>
         </div>
     </header>
+    <!--Navigation panel-->
+    <nav class="navigation" id="navigation">
+        <h1>SivaKumarKatari</h1>
+        <div class="navPanel">
+            <a href="#about">About</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#projects">Work</a>
+            <a href="#ping">Hire me</a>
+        </div>
+        <a href="./media/profile-pic.jpg" alt="siva-resume" download="siva-resume">download my resume</a>
+    </nav>
+    <!--Mobile navigation - Hamburger menu-->
+    <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+    <!--To Top navigator-->
+    <div class="toTop" id="toTop">
+        <a href="#welcome"><i class="fas fa-arrow-up"></i></a>
+    </div>
     <!--About section-->
-    <section class="about">
+    <section class="about" id="about">
         <div class="part1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="0">
             <div class="text">
                 <div class="hi"><p class="p">Hello, I am</p></div>
                 <h1>siva kumar katari</h1>
-                <p>A curious and creative web developer having in-depth knowledge in Javascript and React,I can design & implement UI for e-commerce,personnel softwares and portfolio using various technologies and frameworks.
+                <p>A curious and creative web developer having in-depth knowledge in Javascript and React,I can design & implement UI for e-commerce,personnel softwares and portfolios using various technologies and frameworks.
                 </p>
             </div>
         </div>
-        <div class="part2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="0" data-aos-offset="300">
+        <div class="part2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="0">
             <div class="profile">
                 <div class="contact">
                     <div class="social-media">
                         <div class="icon icon-instagram">
-                            <img src="./media/icon-instagram.svg" alt="Instagram">
+                            <a href="https://www.instagram.com/web_surfers_/">
+                                <img src="./media/icon-instagram.svg" alt="Instagram">
+                            </a>
                         </div>
                         <div class="icon icon-whatsapp">
-                            <img src="./media/icon-facebook.svg" alt="whatsapp">
+                            <a href="https://wa.link/hue38i">
+                                <img src="./media/icon-facebook.svg" alt="whatsapp">
+                            </a>
                         </div>
                         <div class="icon icon-twitter">
-                            <img src="./media/icon-twitter.svg" alt="twitter">
+                            <a href="https://twitter.com/SivaKumarKatar2">
+                                <img src="./media/icon-twitter.svg" alt="twitter">
+                            </a>
                         </div>
                         <div class="icon icon-linkedin">
-                            <img src="./media//icon-pinterest.svg" alt="linkedin">
+                            <a href="https://www.linkedin.com/in/siva-kumar-katari-25519919a/">
+                                <img src="./media//icon-pinterest.svg" alt="linkedin">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +112,7 @@
         </div>
     </section>
     <!--Expertise section-->
-    <section class="expertise">
+    <section class="expertise" id="expertise">
         <div class="textWrap" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
             <h3>expertise</h3>
             <p>I have a 2years of experienc with <span>JavaScript</span> and 1 year with <span>React</span>. I can design minimal layouts and even develop them suitable to every screen i.e., <span>Responsive</span>.I am a self taught student,I learn all these things by doing.</p>
@@ -137,7 +165,7 @@
         </div>
     </section>
     <!--projects page-->
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="textWrap" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
             <h3>My work</h3>
             <p>A selection of recent projects I have worked on...</p>
@@ -151,8 +179,8 @@
                     </div>
                     <p>+</p>
                     <div class="wrap">
-                        <a href="#">Project link</a>
-                        <a href="#">Code link</a>
+                        <a href="https://ip-address-tracker01.netlify.app/">Project link</a>
+                        <a href="https://github.com/sivakumarkatari2020/ip-address-tracker">Code link</a>
                     </div>
                 </div>
             </div>
@@ -164,8 +192,8 @@
                     </div>
                     <p>+</p>
                     <div class="wrap">
-                        <a href="#">Project link</a>
-                        <a href="#">Code link</a>
+                        <a href="https://mytodo-list01.netlify.app/">Project link</a>
+                        <a href="https://github.com/sivakumarkatari2020/todo-list-app">Code link</a>
                     </div>
                 </div>
             </div>
@@ -177,8 +205,8 @@
                     </div>
                     <p>+</p>
                     <div class="wrap">
-                        <a href="#">Project link</a>
-                        <a href="#">Code link</a>
+                        <a href="https://calculator-app-3fe8c.web.app/">Project link</a>
+                        <a href="https://github.com/sivakumarkatari2020/calculator-app">Code link</a>
                     </div>
                 </div>
             </div>
@@ -190,8 +218,8 @@
                     </div>
                     <p>+</p>
                     <div class="wrap">
-                        <a href="#">Project link</a>
-                        <a href="#">Code link</a>
+                        <a href="https://loopstudios01.netlify.app/">Project link</a>
+                        <a href="https://github.com/sivakumarkatari2020/loopstudios-landing-page">Code link</a>
                     </div>
                 </div>
             </div>
@@ -203,18 +231,19 @@
                     </div>
                     <p>+</p>
                     <div class="wrap">
-                        <a href="#">Project link</a>
-                        <a href="#">Code link</a>
+                        <a href="https://crowd-funding-landing-page.netlify.app/">Project link</a>
+                        <a href="https://github.com/sivakumarkatari2020/crowdfunding-product-page-using-react">Code link</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--contact page-->
-    <section class="ping">
+    <section class="ping" id="ping">
         <div class="quote">"Lead Me,Follow Me,Or Stay Out Of My Way"</div>
         <div class="conclusions">
             <p>Started a new project,Want to hire me?</p>
+            <p>ping me on </p>
             <div class="social-media">
                 <a href="phone"><i class="fas fa-phone-volume"></i></a>
                 <a href="https://twitter.com/SivaKumarKatar2" target="new"><i class="fab fa-twitter"></i></a>

@@ -5,6 +5,10 @@ let shape3 = document.getElementById("parallax3");
 let shape4 = document.getElementById("parallax4");
 let shape5 = document.getElementById("parallax5");
 
+let nav = document.getElementById('navigation');
+let hamb = document.getElementById('hamburger');
+let toTop = document.getElementById('toTop');
+
 window.addEventListener('scroll',()=>{
     let value = window.scrollY;
 
@@ -50,5 +54,23 @@ window.addEventListener('scroll',()=>{
         shape5.style.display = 'none';
     }else{
         shape5.style.display = 'block';
+    }
+
+    if(window.scrollY > window.innerHeight && window.innerWidth > 480){
+        nav.style.height = "100px";
+    }else if(window.scrollY < window.innerHeight){
+        nav.style.height = 0;
+    }
+
+    if(window.scrollY > window.innerHeight && window.innerWidth <= 480){
+        hamb.style.height = "40px";
+    }else if(window.scrollY < window.innerHeight){
+        hamb.style.height = 0;
+    }
+
+    if(window.scrollY > window.innerHeight){
+        toTop.style.display = "flex";
+    }else if(window.scrollY < window.innerHeight){
+        toTop.style.display = "none";
     }
 });

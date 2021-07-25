@@ -1,0 +1,103 @@
+/*css for the Navigation panel, floating buttons*/
+#navigation{
+    position: sticky;
+    top: 0;
+    height: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media (max-width : 480px){
+    .navigation{
+        display: none;
+    }
+}
+.navigation h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.navigation .navPanel{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navPanel a{
+    display: block;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: .5s;
+}
+.navPanel a:hover{
+    color: #8f00ff;
+    letter-spacing: 2px;
+}
+.navigation > a{
+    display: block;
+    padding: 1rem;
+    font-size: 0.7rem;
+    border: 2px solid #8f00ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #8f00ff;
+    transition: 0.5s;
+}
+.navigation > a:hover{
+    background-color: #8f00ff;
+    color: #FFFFFF;
+}
+.hamburger{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    display: none;
+    position: sticky;
+    top: 5%;
+    left: 85%;
+    z-index: 999;
+    border-radius: 5px;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+@media (max-width : 480px){
+    .hamburger{
+        display: flex;
+    }
+}
+.toTop{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 85%;
+    left: 90%;
+    z-index: 999;
+    transition: .5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.toTop:hover{
+    background-color: #8f00ff;
+}
+.toTop a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
