@@ -8,6 +8,8 @@
     <!--AOS library-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--fontawesome icons-->
+    <script src="https://kit.fontawesome.com/b6b4c41698.js" crossorigin="anonymous"></script>
     <!--CSS files-->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/shapes.css">
@@ -61,7 +63,24 @@
             </div>
         </div>
         <div class="part2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="0" data-aos-offset="300">
-            <img src="./media/profile-pic.jpg" alt="">
+            <div class="profile">
+                <div class="contact">
+                    <div class="social-media">
+                        <div class="icon icon-instagram">
+                            <img src="./media/icon-instagram.svg" alt="Instagram">
+                        </div>
+                        <div class="icon icon-whatsapp">
+                            <img src="./media/icon-facebook.svg" alt="whatsapp">
+                        </div>
+                        <div class="icon icon-twitter">
+                            <img src="./media/icon-twitter.svg" alt="twitter">
+                        </div>
+                        <div class="icon icon-linkedin">
+                            <img src="./media//icon-pinterest.svg" alt="linkedin">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!--Expertise section-->
@@ -72,45 +91,45 @@
         </div>
         <div class="dropdown">
             <div class="accordion">
-                <div class="first-acc acc" id="first-acc" data-aos="fade-left">
-                    <div class="drop">
-                        <h1>01 . javascript</h1>
-                        <img src="./media/icon-arrow.svg" alt="down-arrow" id="down1" onclick="openAcc(event)">
+                <div class="first-acc acc" id="first-acc" data-aos="fade-top">
+                    <div class="drop" id="down1">
+                        <h1><span>01</span> . javascript</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow">
                     </div>
                     <p class="down1">I have an work experienc of 2years with JavaScript,I am comfortable with ES6 features and Asynchrous programming model,Modules,Aroow functions and Higher order functions.</p>
                 </div>
-                <div class="second-acc acc" id="second-acc" data-aos="fade-left" data-aos-delay="500">
-                    <div class="drop">
-                        <h1>02 . css preprocessor - sass</h1>
-                        <img src="./media/icon-arrow.svg" alt="down-arrow" id="down2" onclick="openAcc(event)">
+                <div class="second-acc acc" id="second-acc" data-aos="fade-top" data-aos-delay="50">
+                    <div class="drop" id="down2">
+                        <h1><span>02</span> . css preprocessor - sass</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow">
                     </div>
                     <p class="down2">From more than a year I am using SASS as my preprocessor for CSS,I love to work with it's functional style.</p>
                 </div>
-                <div class="third-acc acc" id="third-acc" data-aos="fade-left" data-aos-delay="1000">
-                    <div class="drop">
-                        <h1>03 . react</h1>
-                        <img src="./media/icon-arrow.svg" alt="down-arrow" id="down3" onclick="openAcc(event)">
+                <div class="third-acc acc" id="third-acc" data-aos="fade-top" data-aos-delay="100">
+                    <div class="drop" id="down3">
+                        <h1><span>03</span> . react</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow">
                     </div>
                     <p class="down3">React is an amazing JavaScript library,since from the year I am using React and I can easily integrate real-time data with React state management library Redux.</p>
                 </div>
-                <div class="fourth-acc acc" id="fourth-acc" data-aos="fade-left" data-aos-delay="1500">
-                    <div class="drop">
-                        <h1>04 . api</h1>
-                        <img src="./media/icon-arrow.svg" alt="down-arrow" id="down4" onclick="openAcc(event)">
+                <div class="fourth-acc acc" id="fourth-acc" data-aos="fade-top" data-aos-delay="150">
+                    <div class="drop" id="down4">
+                        <h1><span>04</span> . api</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow">
                     </div>
                     <p class="down4">I can easily work with both external and internal API's. I also know, how to create and arrange endpoints with REST API.</p>
                 </div>
-                <div class="fifth-acc acc" id="fifth-acc" data-aos="fade-left" data-aos-delay="2000">
-                    <div class="drop">
-                        <h1>05 . design</h1>
-                        <img src="./media/icon-arrow.svg" alt="down-arrow" id="down5" onclick="openAcc(event)">
+                <div class="fifth-acc acc" id="fifth-acc" data-aos="fade-top" data-aos-delay="200">
+                    <div class="drop" id="down5">
+                        <h1><span>05</span> . design</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow">
                     </div>
                     <p class="down5">As a part of fronend I also known some design patterns, I can creatively make landing pages,portfolios,e-commerce sites etc.,</p>
                 </div>
-                <div class="sixth-acc acc" id="sixth-acc" data-aos="fade-left" data-aos-delay="2500">
-                    <div class="drop">
-                        <h1>06 . backend</h1>
-                        <img src="./media/icon-arrow.svg" alt="down-arrow" id="down6" onclick="openAcc(event)">
+                <div class="sixth-acc acc" id="sixth-acc" data-aos="fade-top" data-aos-delay="250">
+                    <div class="drop" id="down6">
+                        <h1><span>06</span> . backend</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow">
                     </div>
                     <p class="down6">I have some strong part with Data Structures, as a part of this I know C & Python languages,now I am learning Node. Along with these I know to work with MySql database.</p>
                 </div>
@@ -119,7 +138,102 @@
     </section>
     <!--projects page-->
     <section class="projects">
-
+        <div class="textWrap" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+            <h3>My work</h3>
+            <p>A selection of recent projects I have worked on...</p>
+        </div>
+        <div class="projects-cont">
+            <div class="card project1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+                <div class="hover-card">
+                    <div class="title">
+                        <h3>ip address tracker</h3>
+                        <h5>letleaf api</h5>
+                    </div>
+                    <p>+</p>
+                    <div class="wrap">
+                        <a href="#">Project link</a>
+                        <a href="#">Code link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+                <div class="hover-card">
+                    <div class="title">
+                        <h3>todo list app</h3>
+                        <h5>double themed</h5>
+                    </div>
+                    <p>+</p>
+                    <div class="wrap">
+                        <a href="#">Project link</a>
+                        <a href="#">Code link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project3" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+                <div class="hover-card">
+                    <div class="title">
+                        <h3>calculator</h3>
+                        <h5>3 level theme switcher</h5>
+                    </div>
+                    <p>+</p>
+                    <div class="wrap">
+                        <a href="#">Project link</a>
+                        <a href="#">Code link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project4" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+                <div class="hover-card">
+                    <div class="title">
+                        <h3>loop studios landing page</h3>
+                        <h5>react</h5>
+                    </div>
+                    <p>+</p>
+                    <div class="wrap">
+                        <a href="#">Project link</a>
+                        <a href="#">Code link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project5" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+                <div class="hover-card">
+                    <div class="title">
+                        <h3>crowd funding landing page</h3>
+                        <h5>react</h5>
+                    </div>
+                    <p>+</p>
+                    <div class="wrap">
+                        <a href="#">Project link</a>
+                        <a href="#">Code link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact page-->
+    <section class="ping">
+        <div class="quote">"Lead Me,Follow Me,Or Stay Out Of My Way"</div>
+        <div class="conclusions">
+            <p>Started a new project,Want to hire me?</p>
+            <div class="social-media">
+                <a href="phone"><i class="fas fa-phone-volume"></i></a>
+                <a href="https://twitter.com/SivaKumarKatar2" target="new"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/web_surfers_/" target="new"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/siva-kumar-katari-25519919a/" target="new"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sivakumarkatari2020" target="new"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="or-sep"><span></span><span class="or-text">OR</span><span></span></p>
+            <div class="email-box">
+                <a href="mailto:websurfers.dev@gmail.com?subject=Want to work with you" id="email">
+                    <img src="./media/gmail.svg" alt="gmail">
+                    <p class="email-text">write an email to me</p>
+                    <!--<div class="cover">
+                        <img src="./media/gmail.svg" alt="">
+                        <p class="email-text">write an email to me</p>
+                    </div>-->
+                </a>
+            </div>
+        </div>
     </section>
     <!--Script for cursor tracker-->
     <script>
