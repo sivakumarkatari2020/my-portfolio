@@ -12,3 +12,36 @@ for(let i=0;i<Accordions.length;i++){
     })
 }
 
+let hamburger = document.getElementById("hamburger");
+let navbar = document.getElementById("navigation");
+let mobNav = document.getElementById("mobileNav");
+
+hamburger.addEventListener('click',function openMenu(){
+    this.classList.toggle('is-active');
+
+    if(mobNav.style.minHeight == '0px' || mobNav.style.minHeight == 0){
+        console.log("Open");
+        mobNav.style.minHeight = '100vh';
+    }
+    else{
+        console.log("close");
+        mobNav.style.minHeight = 0;
+    }
+})
+
+let mobLinks = document.getElementsByClassName("mob-a");
+
+for(let i=0;i<mobLinks.length;i++){
+    mobLinks[i].addEventListener('click',function(){
+        hamburger.classList.toggle('is-active');
+
+        if(mobNav.style.minHeight == '0px' || mobNav.style.minHeight == 0){
+            console.log("Open");
+            mobNav.style.minHeight = '100vh';
+        }
+        else{
+            console.log("close");
+            mobNav.style.minHeight = 0;
+        }
+    })
+}

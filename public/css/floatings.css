@@ -14,22 +14,81 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 @media (max-width : 480px){
-    .navigation{
+    #navigation{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navigation .logo-ico{
+        width: 100%;
+        padding: 0 2rem;
+        height: 60px;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999;
+    }
+}
+.navigation .logo-ico #logo-desktop{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.navigation .logo-ico #logo-mobile{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+@media (min-width : 480px){
+    .navigation .logo-ico #logo-mobile{
         display: none;
     }
 }
-.navigation h1{
-    font-size: 1.2rem;
-    font-weight: 700;
+@media (max-width : 480px){
+    .navigation .logo-ico #logo-desktop{
+        display: none;
+    }
+}
+.logo-ico .hamburger{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #FFFFFF;
+    display: none;
+    border-radius: 5px;
+    transition: .5s;
+}
+.hamburger i{
+    width: 30px;
+    height: 30px;
+}
+@media (max-width : 480px){
+    .logo-ico .hamburger{
+        display: flex;
+    }
 }
 .navigation .navPanel{
-    width: 30%;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navPanel .pages{
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.navPanel a{
+.navPanel .pages a{
     display: block;
     width: 25%;
     text-align: center;
@@ -37,11 +96,11 @@
     color: #FFFFFF;
     transition: .5s;
 }
-.navPanel a:hover{
+.navPanel .pages a:hover{
     color: #8f00ff;
     letter-spacing: 2px;
 }
-.navigation > a{
+.navPanel #resume{
     display: block;
     padding: 1rem;
     font-size: 0.7rem;
@@ -51,32 +110,79 @@
     color: #8f00ff;
     transition: 0.5s;
 }
-.navigation > a:hover{
+.navigation .navPanel #resume:hover{
     background-color: #8f00ff;
     color: #FFFFFF;
 }
-.hamburger{
-    width: 40px;
-    height: 40px;
+/*
+    Mobile navigation panel design
+    Absolute position 
+    z-index : 998
+    static links
+*/
+.mobileNav{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    padding: 0 2rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    display: none;
-    position: sticky;
-    top: 5%;
-    left: 85%;
-    z-index: 999;
-    border-radius: 5px;
-    height: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #000;
+    min-height: 0;
+    max-height: 0;
     overflow: hidden;
     transition: .5s;
+    position: fixed;
+    top: 0;
+    z-index: 998;
 }
-@media (max-width : 480px){
-    .hamburger{
-        display: flex;
+.mobileNav .mobilePages{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mobileNav .mobilePages a{
+    display: block;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: .5s;
+    font-size: 2rem;
+    font-weight: 300;
+    border-bottom: 1px solid #666;
+}
+.mobileNav .mobilePages a:hover{
+    font-style: italic;
+}
+.mobileNav #resume{
+    display: block;
+    padding: 1rem;
+    font-size: 0.7rem;
+    border: 2px solid #8f00ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #8f00ff;
+    transition: 0.5s;
+}
+.mobileNav #resume:hover{
+    background-color: #8f00ff;
+    color: #FFFFFF;
+}
+@media (min-width : 480px){
+    .mobileNav{
+        display: none;
     }
 }
+
 .toTop{
     width: 50px;
     height: 50px;
@@ -89,9 +195,14 @@
     position: sticky;
     top: 85%;
     left: 90%;
-    z-index: 999;
+    z-index: 997;
     transition: .5s;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media (max-width : 480px){
+    .toTop{
+        left: 85%;
+    }
 }
 .toTop:hover{
     background-color: #8f00ff;

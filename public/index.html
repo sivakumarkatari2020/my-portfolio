@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax Portfolio</title>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon-16x16.png">
+    <link rel="manifest" href="./media/site.webmanifest">
     <!--AOS library-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--fontawesome icons-->
     <script src="https://kit.fontawesome.com/b6b4c41698.js" crossorigin="anonymous"></script>
+    <!--Hamburger css-->
+    <link href="./css/hamburgers.css" rel="stylesheet">
     <!--CSS files-->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/shapes.css">
@@ -55,18 +62,35 @@
     </header>
     <!--Navigation panel-->
     <nav class="navigation" id="navigation">
-        <h1>SivaKumarKatari</h1>
-        <div class="navPanel">
-            <a href="#about">About</a>
-            <a href="#expertise">Expertise</a>
-            <a href="#projects">Work</a>
-            <a href="#ping">Hire me</a>
+        <div class="logo-ico">
+            <img src="./media/logo.png" alt="logo-desktop" id="logo-desktop">
+            <img src="./media/favicon-32x32.png" alt="logo-mobile" id="logo-mobile">
+            <!--Mobile navigation - Hamburger menu-->
+            <div class="hamburger hamburger--spin" id="hamburger">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>              
         </div>
-        <a href="./media/profile-pic.jpg" alt="siva-resume" download="siva-resume">download my resume</a>
+        <div class="navPanel">
+            <div class="pages">
+                <a href="#about">About</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#projects">Work</a>
+                <a href="#ping">Hire me</a>
+            </div>
+            <a href="./media/my-resume.pdf" target="_blank" alt="siva-resume" download="siva-resume" id="resume">download my resume</a>
+        </div>
     </nav>
-    <!--Mobile navigation - Hamburger menu-->
-    <div class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
+    <!--Mobile nav panel-->
+    <div class="mobileNav" id="mobileNav">
+        <div class="mobilePages">
+            <a href="#about" class="mob-a" data-aos="fade-up" data-aos-duration="500">About</a>
+            <a href="#expertise" class="mob-a" data-aos="fade-up" data-aos-duration="500">Expertise</a>
+            <a href="#projects" class="mob-a" data-aos="fade-up" data-aos-duration="500">Work</a>
+            <a href="#ping" class="mob-a" data-aos="fade-up" data-aos-duration="500">Hire me</a>
+        </div>
+        <a href="./media/my-resume.pdf" target="_blank" alt="siva-resume" download="siva-resume" id="resume" data-aos="fade-up" data-aos-duration="500">download my resume</a>
     </div>
     <!--To Top navigator-->
     <div class="toTop" id="toTop">
@@ -87,23 +111,23 @@
                 <div class="contact">
                     <div class="social-media">
                         <div class="icon icon-instagram">
-                            <a href="https://www.instagram.com/web_surfers_/">
-                                <img src="./media/icon-instagram.svg" alt="Instagram">
+                            <a href="https://www.instagram.com/web_surfers_/" target="_blank">
+                                <i class="fab fa-instagram"></i>
                             </a>
                         </div>
                         <div class="icon icon-whatsapp">
-                            <a href="https://wa.link/hue38i">
-                                <img src="./media/icon-facebook.svg" alt="whatsapp">
+                            <a href="https://wa.link/hue38i" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
                             </a>
                         </div>
                         <div class="icon icon-twitter">
-                            <a href="https://twitter.com/SivaKumarKatar2">
-                                <img src="./media/icon-twitter.svg" alt="twitter">
+                            <a href="https://twitter.com/SivaKumarKatar2" target="_blank">
+                                <i class="fab fa-twitter"></i>
                             </a>
                         </div>
                         <div class="icon icon-linkedin">
-                            <a href="https://www.linkedin.com/in/siva-kumar-katari-25519919a/">
-                                <img src="./media//icon-pinterest.svg" alt="linkedin">
+                            <a href="https://www.linkedin.com/in/siva-kumar-katari-25519919a/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
@@ -179,8 +203,8 @@
                     </div>
                     <p>+</p>
                     <div class="wrap">
-                        <a href="https://ip-address-tracker01.netlify.app/">Project link</a>
-                        <a href="https://github.com/sivakumarkatari2020/ip-address-tracker">Code link</a>
+                        <a href="https://ip-address-tracker01.netlify.app/" target="_blank">Project link</a>
+                        <a href="https://github.com/sivakumarkatari2020/ip-address-tracker" target="_blank">Code link</a>
                     </div>
                 </div>
             </div>
@@ -192,8 +216,8 @@
                     </div>
                     <p>+</p>
                     <div class="wrap">
-                        <a href="https://mytodo-list01.netlify.app/">Project link</a>
-                        <a href="https://github.com/sivakumarkatari2020/todo-list-app">Code link</a>
+                        <a href="https://mytodo-list01.netlify.app/" target="_blank">Project link</a>
+                        <a href="https://github.com/sivakumarkatari2020/todo-list-app" target="_blank">Code link</a>
                     </div>
                 </div>
             </div>
@@ -205,8 +229,8 @@
                     </div>
                     <p>+</p>
                     <div class="wrap">
-                        <a href="https://calculator-app-3fe8c.web.app/">Project link</a>
-                        <a href="https://github.com/sivakumarkatari2020/calculator-app">Code link</a>
+                        <a href="https://calculator-app-3fe8c.web.app/" target="_blank">Project link</a>
+                        <a href="https://github.com/sivakumarkatari2020/calculator-app" target="_blank">Code link</a>
                     </div>
                 </div>
             </div>
@@ -218,8 +242,8 @@
                     </div>
                     <p>+</p>
                     <div class="wrap">
-                        <a href="https://loopstudios01.netlify.app/">Project link</a>
-                        <a href="https://github.com/sivakumarkatari2020/loopstudios-landing-page">Code link</a>
+                        <a href="https://loopstudios01.netlify.app/" target="_blank">Project link</a>
+                        <a href="https://github.com/sivakumarkatari2020/loopstudios-landing-page" target="_blank">Code link</a>
                     </div>
                 </div>
             </div>
@@ -231,8 +255,8 @@
                     </div>
                     <p>+</p>
                     <div class="wrap">
-                        <a href="https://crowd-funding-landing-page.netlify.app/">Project link</a>
-                        <a href="https://github.com/sivakumarkatari2020/crowdfunding-product-page-using-react">Code link</a>
+                        <a href="https://crowd-funding-landing-page.netlify.app/" target="_blank">Project link</a>
+                        <a href="https://github.com/sivakumarkatari2020/crowdfunding-product-page-using-react" target="_blank">Code link</a>
                     </div>
                 </div>
             </div>
@@ -246,10 +270,10 @@
             <p>ping me on </p>
             <div class="social-media">
                 <a href="phone"><i class="fas fa-phone-volume"></i></a>
-                <a href="https://twitter.com/SivaKumarKatar2" target="new"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/web_surfers_/" target="new"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/siva-kumar-katari-25519919a/" target="new"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/sivakumarkatari2020" target="new"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/SivaKumarKatar2" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/web_surfers_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/siva-kumar-katari-25519919a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sivakumarkatari2020" target="_blank"><i class="fab fa-github"></i></a>
             </div>
             <p class="or-sep"><span></span><span class="or-text">OR</span><span></span></p>
             <div class="email-box">

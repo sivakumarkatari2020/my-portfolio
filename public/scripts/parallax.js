@@ -6,7 +6,9 @@ let shape4 = document.getElementById("parallax4");
 let shape5 = document.getElementById("parallax5");
 
 let nav = document.getElementById('navigation');
-let hamb = document.getElementById('hamburger');
+let mobileNav = document.getElementById("mobileNav");
+let mobileHam = document.getElementById("hamburger");
+//let hamb = document.getElementById('hamburger');
 let toTop = document.getElementById('toTop');
 
 window.addEventListener('scroll',()=>{
@@ -56,17 +58,22 @@ window.addEventListener('scroll',()=>{
         shape5.style.display = 'block';
     }
 
-    if(window.scrollY > window.innerHeight && window.innerWidth > 480){
+    if(window.scrollY > window.innerHeight-50){
+        if(window.innerWidth <= 480){
+            nav.style.height = "50px";
+        }
+        else{
         nav.style.height = "100px";
+        }
     }else if(window.scrollY < window.innerHeight){
         nav.style.height = 0;
+        mobileNav.style.minHeight = 0;
+        mobileHam.classList.remove('is-active');
     }
 
-    if(window.scrollY > window.innerHeight && window.innerWidth <= 480){
+    /*if(window.scrollY > (window.innerHeight-400) && window.innerWidth <= 480){
         hamb.style.height = "40px";
-    }else if(window.scrollY < window.innerHeight){
-        hamb.style.height = 0;
-    }
+    }*/
 
     if(window.scrollY > window.innerHeight){
         toTop.style.display = "flex";

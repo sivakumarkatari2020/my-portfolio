@@ -118,8 +118,6 @@ header .mouse{
     to{margin-top: 1rem;opacity: 0;}
 }
 .about{
-    height: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -143,7 +141,6 @@ header .mouse{
     .about > div{
         width: 100%;
         min-width: 100%;
-        height: 50%;
         min-height: 50vh;
     }
 
@@ -214,8 +211,9 @@ header .mouse{
 }
 .about .part2 .profile{
     width : 80%;
+    max-width: 500px;
     height: 50%;
-    min-height: 600px;
+    max-height: 500px;
     object-fit: cover;
     background: url('../media/profile-pic.jpg') no-repeat center;
     background-size: cover;
@@ -223,7 +221,7 @@ header .mouse{
 .part2 .profile .contact{
     width: 100%;
     height: 100%;
-    min-height: 600px;
+    min-height: 500px;
     background: rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
@@ -259,10 +257,10 @@ header .mouse{
     cursor: pointer;
     transition: .5s;
 }
-.icon img{
+.icon i{
     transition: 0.5s;
 }
-.icon:hover img{
+.icon:hover i{
     transform: rotate(360deg);
 }
 .icon-instagram:hover{
@@ -302,7 +300,6 @@ header .mouse{
 .expertise > div{
         width: 50%;
         max-width: 50%;
-        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -316,7 +313,7 @@ header .mouse{
     .expertise > div{
         width: 100%;
         min-width: 100%;
-        min-height: 70vh;
+        min-height: 50vh;
     }
 }
 .expertise .textWrap{
@@ -487,7 +484,7 @@ header .mouse{
 }
 @media (max-width : 480px){
     .projects .textWrap{
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
     .projects .textWrap h3{
