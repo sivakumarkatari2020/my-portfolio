@@ -6,6 +6,9 @@
 }
 html{
     scroll-behavior: smooth;
+    line-height: 1.15;
+    /* Prevent adjustments of font size after orientation changes in iOS.*/
+	-webkit-text-size-adjust: 100%;
 }
 body{
     width: 100%;
@@ -15,7 +18,19 @@ body{
     background-color: #1e002a;
     font-size: 16px;
     font-weight: 500;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5rem;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color : #FFFFFF;
 }
 .cursor{
     width: 30px;
@@ -86,10 +101,12 @@ header .parallaxText{
 header p{
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    font-family: 'Lora', serif;
+    line-height: 100%;
 }
 @media (max-width : 480px){
     header p{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 header .mouse{
@@ -126,8 +143,8 @@ header .mouse{
 .about > div{
     width: 50%;
     max-width: 50%;
-    height: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,7 +158,8 @@ header .mouse{
     .about > div{
         width: 100%;
         min-width: 100%;
-        min-height: 50vh;
+        min-height: 50%;
+        max-height: 50vh;
     }
 
     .about .part1{
@@ -179,6 +197,7 @@ header .mouse{
     z-index: -1;
 }
 .part1 .hi .p{
+    font-family: 'Poppins',sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
 }
@@ -193,7 +212,6 @@ header .mouse{
     font-size: 1.2rem;
     font-weight: 300;
     letter-spacing: 1px;
-    line-height: 120%;
 }
 @media (max-width : 480px){
     .part1 .text h1{
@@ -203,7 +221,6 @@ header .mouse{
     .part1 .text p{
         font-size: 1rem;
         letter-spacing: 1px;
-        line-height: 150%;
     }
 }
 .about .part2{
@@ -212,16 +229,15 @@ header .mouse{
 .about .part2 .profile{
     width : 80%;
     max-width: 500px;
-    height: 50%;
-    max-height: 500px;
+    height: 500px;
+    max-height: 50%;
     object-fit: cover;
-    background: url('../media/profile-pic.jpg') no-repeat center;
+    background: url('../media/profile.jpg') no-repeat center;
     background-size: cover;
 }
 .part2 .profile .contact{
     width: 100%;
     height: 100%;
-    min-height: 500px;
     background: rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
@@ -230,6 +246,10 @@ header .mouse{
     opacity: 0;
 }
 @media (max-width : 480px){
+    .about .part2 .profile{
+        height: 50%;
+        max-height: 50vh;
+    }
     .part2 .profile .contact{
         display: none;
     }
@@ -290,8 +310,8 @@ header .mouse{
     }
 }
 .expertise{
-    height: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 750px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -308,6 +328,8 @@ header .mouse{
 @media (max-width : 480px){
     .expertise{
         flex-direction: column;
+        height: 100%;
+        max-height: 100%;
     }
 
     .expertise > div{
@@ -345,17 +367,17 @@ header .mouse{
     font-weight: 300;
     word-spacing: 2px;
     color: #FFFFFF;
-    line-height: 120%;
 }
 @media (max-width : 480px){
     .expertise .textWrap p{
-        max-width: 300px;
+        max-width: 350px;
         font-size: 1rem;
         text-align: center;
     }
 }
 .expertise .textWrap p span{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 .expertise .dropdown{
     justify-content: flex-start;
@@ -426,7 +448,6 @@ header .mouse{
 .acc p{
     font-size: 1.2rem;
     font-weight: 300;
-    line-height: 120%;
     letter-spacing: 1px;
     word-spacing: 3px;
     transition: .5s;
@@ -616,7 +637,8 @@ header .mouse{
 }
 .ping{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -636,6 +658,7 @@ header .mouse{
     font-size: 2rem;
     margin-bottom: 4rem;
     text-align: center;
+    font-family: 'Lora', serif;
 }
 .conslusions{
     margin: 4rem;
@@ -745,7 +768,8 @@ header .mouse{
         background-color: #FFFFFF;
         color: #8f00ff;
     }
-    #email-box a p{
+    .email-box a p{
+        font-family: 'Poppins',sans-serif;
         font-weight: 500;
     }
 }
@@ -755,7 +779,8 @@ header .mouse{
     background-color: #FFFFFF;
 }
 .email-box a p{
-    font-weight: 800;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
     transition: .1s;
 }
 #email:hover{

@@ -76,13 +76,15 @@
 }
 .navigation .navPanel{
     width: 60%;
+    max-width: 900px;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .navPanel .pages{
-    width: 40%;
+    width: 60%;
+    max-width: 500px;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -200,7 +202,7 @@
 }
 @media (max-width : 480px){
     .toTop{
-        left: 85%;
+        left: 80%;
     }
 }
 .toTop:hover{
