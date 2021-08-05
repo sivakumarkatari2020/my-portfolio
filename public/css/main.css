@@ -10,6 +10,22 @@ html{
     /* Prevent adjustments of font size after orientation changes in iOS.*/
 	-webkit-text-size-adjust: 100%;
 }
+::-webkit-scrollbar {
+    width: 8px;
+}
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #8f00ff;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #FFFFFF;
+}
 body{
     width: 100%;
     max-width: 100vw;
@@ -224,7 +240,7 @@ header .mouse{
     }
 }
 .about .part2{
-    background-color: #8f00ff;
+    background-color: inherit;
 }
 .about .part2 .profile{
     width : 80%;
@@ -257,7 +273,7 @@ header .mouse{
 .about .part2 .profile:hover .contact{
     opacity: 1;
 }
-.profile .contact .social-media{
+.profile .contact .social-media-top{
     width: 100%;
     max-width: 350px;
     height: 70px;
@@ -266,7 +282,7 @@ header .mouse{
     justify-content: space-around;
     align-items: center;
 }
-.contact .social-media .icon{
+.contact .social-media-top .icon{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -277,7 +293,16 @@ header .mouse{
     cursor: pointer;
     transition: .5s;
 }
+.social-media-top .icon a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
 .icon i{
+    font-size: 24px;
     transition: 0.5s;
 }
 .icon:hover i{
@@ -669,7 +694,7 @@ header .mouse{
     font-weight: 500;
     text-align: center;
 }
-.social-media{
+.conclusions .social-media{
     width: 100%;
     height: 200px;
     display: flex;
