@@ -58,7 +58,7 @@
 .parallax2 span:nth-child(even){
     top: 80%;
     left: 20%;
-    transform: translate(-50%,-50%) rotate(50deg) scale(3);
+    transform: translate(-50%,-50%) rotate(50deg) scale(2);
 }
 @media (max-width : 480px){
     .parallax2 span:nth-child(even){
