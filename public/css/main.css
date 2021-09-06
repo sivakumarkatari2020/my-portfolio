@@ -49,8 +49,8 @@ a{
     color : #FFFFFF;
 }
 .cursor{
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     background: transparent;
     border: 2px dotted #FFFFFF;
     border-radius: 50%;
@@ -60,7 +60,7 @@ a{
     transition: .15s;
     transition-timing-function: linear;
     transition-property: all;
-    animation: pulse 1s infinite linear;
+    animation: pulse 5s infinite linear;
 }
 @keyframes pulse{
     50%{transform: rotate(360deg) scale(0.5);}
@@ -78,7 +78,7 @@ a{
     transition-timing-function: linear;
     transition-property: all;
 }
-@media (max-width : 480px){
+@media (max-width : 800px){
     .cursor,.cursor2{
         display: none;
     }

@@ -5,6 +5,17 @@ let Accordions = document.getElementsByClassName('acc');
 for(let i=0;i<Accordions.length;i++){
     Accordions[i].addEventListener('click',function(){
         let active_ele = document.getElementsByClassName('active');
+
+        //function chkActive(cls){
+        //    return cls === 'active';
+        //}
+
+        //for(let k=0;k<Accordions.classList.length;k++){
+        //    if(Accordions[k].classList.find(chkActive)){
+        //        console.log("I found it")
+        //    }
+        //}
+        
         for(let j=0;j<active_ele.length;j++){
             active_ele[j].classList.toggle('active');
         }
