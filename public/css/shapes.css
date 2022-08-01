@@ -12,8 +12,8 @@
     display: block;
     width: 100px;
     height: 100px;
-    background-color: #0f0015;
-    box-shadow: 0 1px 10px rgba(255,255,255);
+    background-color: #9dbefa;
+    box-shadow: 0 .5px 10px rgba(49, 137, 245, 0.4);
     border-radius: 25px;
     position: relative;
     top: 30%;
@@ -23,6 +23,8 @@
 .parallax1 span:nth-child(even){
     width: 70px;
     height: 70px;
+    background-color: #E2E5DE;
+    box-shadow: 0 .5px 10px rgba(0,0,0,0.4);
     border-radius: 20px;
     top: 50%;
     left: 70%;
@@ -49,7 +51,8 @@
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    background-color: #8f00ff;
+    background-color: #B4B4B4;
+    opacity: 0.5;
     position: relative;
     top: 10%;
     left: 50%;
@@ -58,7 +61,7 @@
 .parallax2 span:nth-child(even){
     top: 80%;
     left: 20%;
-    transform: translate(-50%,-50%) rotate(50deg) scale(2);
+    transform: translate(-50%,-50%) rotate(50deg) scale(1);
 }
 @media (max-width : 480px){
     .parallax2 span:nth-child(even){
@@ -79,7 +82,7 @@
     display: block;
     width: 70px;
     height: 70px;
-    border: solid 20px #4a006a;
+    border: solid 20px #CFCFCF;
     border-top: none;
     border-left: none;
     border-radius: 5px;
@@ -102,7 +105,7 @@
     display: block;
     width: 70px;
     height: 70px;
-    border: solid 20px #4a006a;
+    border: solid 20px #4188FF;
     border-top: none;
     border-left: none;
     border-radius: 5px;
@@ -134,7 +137,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    background-color: #FFFFFF;
+    background-color: #b9d1fb;
     border-radius: 5px;
     position: relative;
     top: 5%;
