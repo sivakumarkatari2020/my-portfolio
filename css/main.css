@@ -576,6 +576,9 @@ header .mouse{
         margin-bottom: 2rem;
     }
 }
+.projects-cont .project0{
+    background-image: url('../media/img-srizon2.png');
+}
 .projects-cont .project1{
     background-image: url('../media/ipaddress-project.jpg');
 }
@@ -619,6 +622,9 @@ header .mouse{
 }
 .card:hover .hover-card{
     opacity: 1;
+}
+.hover-card p{
+    color: #F3F3F3;
 }
 .hover-card .title{
     width: 100%;
