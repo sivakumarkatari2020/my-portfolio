@@ -563,6 +563,7 @@ header .mouse{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 @media (max-width : 480px){
     .projects .projects-cont{
@@ -575,6 +576,9 @@ header .mouse{
         border-radius: 5px;
         margin-bottom: 2rem;
     }
+}
+.projects-cont .project00{
+    background-image: url('../media/trivia-project.png');
 }
 .projects-cont .project0{
     background-image: url('../media/img-srizon2.png');
@@ -596,6 +600,18 @@ header .mouse{
 }
 .projects-cont .project5{
     background-image: url('../media/crowdfunding-project.jpg');
+}
+.card .sale-tag{
+    font-size: 12px;
+    font-weight: 700;
+    padding: .5rem;
+    margin: 1rem;
+    border-radius: 2px;
+    background-color: goldenrod;
+    color: rgb(87, 63, 1);
+    font-family: 'sans';
+    position: absolute;
+    right: 0;
 }
 .card .hover-card{
     width: 100%;
