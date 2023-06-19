@@ -63,7 +63,7 @@ window.addEventListener('scroll',()=>{
             nav.style.height = "50px";
         }
         else{
-        nav.style.height = "100px";
+        nav.style.height = "60px";
         }
     }else if(window.scrollY < window.innerHeight){
         nav.style.height = 0;

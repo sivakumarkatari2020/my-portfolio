@@ -3,7 +3,9 @@
     position: sticky;
     top: 0;
     height: 0;
-    background-color: #EAEAEA;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    box-shadow : rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -11,7 +13,6 @@
     z-index: 999;
     overflow: hidden;
     transition: 0.5s;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 @media (max-width : 480px){
     #navigation{
@@ -22,15 +23,21 @@
     }
     .navigation .logo-ico{
         width: 100%;
-        padding: 0 2rem;
-        height: 60px;
-        margin-bottom: 1rem;
+        max-width: 100%;
+        height: 100%;
+        padding: 0 1.5rem;
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         z-index: 999;
     }
+}
+.navigation .logo-ico .title-text{
+    font-family: 'Aboreto';
+    font-weight: 300;
+    margin: 0;
 }
 .navigation .logo-ico #logo-desktop{
     width: 150px;
@@ -54,8 +61,8 @@
     }
 }
 .logo-ico .hamburger{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,8 +73,8 @@
     transition: .5s;
 }
 .hamburger i{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 @media (max-width : 480px){
     .logo-ico .hamburger{
@@ -100,21 +107,26 @@
 }
 .navPanel .pages a:hover{
     color: #4188FF;
-    letter-spacing: 2px;
 }
 .navPanel #resume{
     display: block;
-    padding: 1rem;
+    padding: .5rem 1rem;
     font-size: 0.7rem;
+    background-color: #4188FF;
+    color: #FFFFFF;
     border: 2px solid #4188FF;
+    border-radius: 50px;
+    outline: none;
     text-decoration: none;
-    text-transform: uppercase;
-    color: #4188FF;
     transition: 0.5s;
 }
 .navigation .navPanel #resume:hover{
-    background-color: #4188FF;
-    color: #FFFFFF;
+    background-color: #0862fd;
+}
+@media (max-width:480px){
+    .navigation .navPanel{
+        display: none;
+    }
 }
 /*
     Mobile navigation panel design
@@ -169,14 +181,11 @@
     padding: 1rem;
     font-size: 0.7rem;
     border: 2px solid #4188FF;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #4188FF;
-    transition: 0.5s;
-}
-.mobileNav #resume:hover{
     background-color: #4188FF;
     color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
 }
 @media (min-width : 480px){
     .mobileNav{
@@ -188,7 +197,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #EAEAEA;
+    background-color: #FFF;
     color: #111111;
     display: flex;
     justify-content: center;
@@ -198,7 +207,8 @@
     left: 90%;
     z-index: 997;
     transition: .5s;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    box-shadow : rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 @media (max-width : 480px){
     .toTop{
@@ -207,6 +217,7 @@
 }
 .toTop:hover{
     background-color: #4188FF;
+    color: #FFFFFF;
 }
 .toTop a{
     text-decoration: none;
