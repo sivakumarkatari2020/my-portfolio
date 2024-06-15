@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siva Kumar</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./media/SK.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/SK.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./media/SK.png">
+    <link rel="manifest" href="./media/site.webmanifest">
+    <!--AOS library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--fontawesome icons-->
+    <script src="https://kit.fontawesome.com/b6b4c41698.js" crossorigin="anonymous"></script>
+    <!--Hamburger css-->
+    <link href="./css/hamburgers.css" rel="stylesheet">
+    <!--CSS files-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/shapes.css">
+    <link rel="stylesheet" href="./css/floatings.css">
+</head>
+<body>
+    <!--pointer trackers-->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <!--Parallax effects with different shapes-->
+    <div class="parallax1" id="parallax1">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="parallax2" id="parallax2">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="parallax3" id="parallax3">
+        <span></span>
+    </div>
+    <div class="parallax4" id="parallax4">
+        <span></span>
+    </div>
+    <div classa="parallax5" id="parallax5">
+        <span></span>
+        <span></span>
+    </div>
+    <!--Welcome page-->
+    <header id="welcome">
+        <div class="header-content">
+            <div class="left">
+                <div class="parallaxText" 
+                    id="parallaxText" 
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom"
+                    data-aos-duration="500">
+                    <h1>Wel<span>come</span></h1>
+                </div>
+                <div class="paras" data-aos="fade-up" data-aos-duration="700">
+                    <span class="bold">Hi, I'm Siva Katari</span>
+                    <span>Data Analyst | Former React Developer</span>
+                    <br>
+                    <p>
+                        Welcome to my portfolio! I am a passionate Data Analyst with a strong background in software development. Currently working at TCS, I specialize in retail (supply chain) and sales domain analytics. I am skilled in Advanced SQL, Power BI, Python, Data Engineering, and Data Warehousing.
+                    </p>
+                </div>
+                <!-- <p data-aos="fade-up" data-aos-duration="1000"><span>swipe up</span></p> -->
+                <div class="mouse" data-aos="fade-up" data-aos-duration="1200">
+                    <a href="https://www.linkedin.com/in/siva-kumar-katari-25519919a/" target="_blank">
+                        LinkedIn <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="pic pic1">
+                    <img src='media/pp/pic1.jpg' class="inner-pic" alt="siva kumar katari"/>
+                </div>
+                <div class="pic pic2">
+                    <img src='media/pp/pic2.jpg' class="inner-pic" alt="siva kumar katari"/>
+                </div>
+                <div class="pic pic3">
+                    <img src='media/pp/pic3.jpg' class="inner-pic" alt="siva kumar katari"/>
+                </div>
+                <div class="pic pic4">
+                    <img src='media/pp/pic4.jpg' class="inner-pic" alt="siva kumar katari"/>
+                </div>
+                <div class="pic pic5">
+                    <img src='media/pp/pic5.jpg' class="inner-pic" alt="siva kumar katari"/>
+                </div>
+                <div class="pic pic6">
+                    <img src='media/pp/pic6.jpg' class="inner-pic" alt="siva kumar katari"/>
+                </div>
+                <div class="pic pic7">
+                    <img src='media/pp/pic7.jpg' class="inner-pic" alt="siva kumar katari"/>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Navigation panel-->
+    <nav class="navigation" id="navigation" style="height:60px;">
+        <div class="logo-ico">
+            <h2 class="title-text">SK</h2>
+            <div class="hamburger hamburger--spin" id="hamburger">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>  
+            <!--
+            <img src="./media/SK.png" alt="logo-desktop" id="logo-desktop">
+            <img src="./media/SK.png" alt="logo-mobile" id="logo-mobile">
+            -->            
+        </div>
+        <div class="navPanel">
+            <div class="pages">
+                <a href="#about">About</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#projects">Work</a>
+                <a href="#ping">Hire me</a>
+            </div>
+            <a href="./media/siva-kumar-resume.pdf" target="_blank" alt="siva-resume" download="siva-resume" id="resume">Download resume</a>
+        </div>
+    </nav>
+    <!--Mobile nav panel-->
+    <div class="mobileNav" id="mobileNav">
+        <div class="mobilePages">
+            <a href="#about" class="mob-a" data-aos="fade-up" data-aos-duration="500">About</a>
+            <a href="#expertise" class="mob-a" data-aos="fade-up" data-aos-duration="500">Expertise</a>
+            <a href="#projects" class="mob-a" data-aos="fade-up" data-aos-duration="500">Work</a>
+            <a href="#ping" class="mob-a" data-aos="fade-up" data-aos-duration="500">Hire me</a>
+        </div>
+        <a href="./media/new-resume.pdf" target="_blank" alt="siva-resume" download="siva-resume" id="resume" data-aos="fade-up" data-aos-duration="500">download my resume</a>
+    </div>
+    <!--To Top navigator-->
+    <div class="toTop" id="toTop">
+        <a href="#welcome"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!--About section-->
+    <section class="about" id="about">
+        <div class="part1" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+            <div class="text">
+                <div class="hi"><p class="p">My</p></div>
+                <h1>Experience</h1>
+                <p>I started my career as a React Developer, building dynamic and user-friendly web applications. Transitioning into data analytics, I am now leveraging my technical background and analytical skills to derive actionable insights from data. My work at TCS focuses on optimizing supply chain processes and enhancing sales strategies through advanced data analysis.
+                </p>
+            </div>
+        </div>
+        <div class="part2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+            <div class="experience-map">
+                <div class="experience exp1">
+                    <img src="./media/logos/tcs.png" alt="TCS" class="logos"/>
+                    <div class="exp-content">
+                        <h3>Bi Developer | Data Engineer</h3>
+                        <p>Tata Consultancy Services</p>
+                        <span>June 2023 - Present</span>
+                        <span class="tag"><i></i>Active</span>
+                        <ul class="keys">
+                            <li>
+                                Developed Power BI dashboards for real-time sales insights, enhancing decision-making.
+                            </li>
+                            <li>
+                                Improved data accuracy using advanced SQL for validation and transformation.
+                            </li>
+                            <li>
+                                Integrated data sources into a centralized warehouse using Azure Data Factory and Fabric.
+                            </li>
+                        </ul>
+                        <div class="skill-tags">
+                            <span>Advanced SQL</span>
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Python</span>
+                            <span>Microsoft Fabric</span>
+                            <span>Azure Data Factory</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience exp2">
+                    <img src="./media/logos/ls.png" alt="LS Tech" class="logos"/>
+                    <div class="exp-content">
+                        <h3>React Developer</h3>
+                        <p>Livestrong Technologies</p>
+                        <span>March 2022 - March 2023 (12 Mos)</span>
+                        <ul class="keys">
+                            <li>
+                                Upgraded existing client software to ReactJS and NodeJS microservices, improving performance and scalability.
+                            </li>
+                            <li>
+                                Implemented a modular architecture using NodeJS microservices, increasing maintainability.
+                            </li>
+                        </ul>
+                        <div class="skill-tags">
+                            <span>ReactJS</span>
+                            <span>NodeJS</span>
+                            <span>Design Systems</span>
+                            <span>SASS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="part2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="0">
+            <div class="profile">
+                <div class="contact">
+                    <div class="social-media-top">
+                        <div class="icon icon-instagram">
+                            <a href="https://www.instagram.com/web_surfers_/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="icon icon-whatsapp">
+                            <a href="https://wa.link/hue38i" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <div class="icon icon-twitter">
+                            <a href="https://twitter.com/SivaKumarKatar2" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="icon icon-linkedin">
+                            <a href="https://www.linkedin.com/in/siva-kumar-katari-25519919a/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+    </section>
+
+    <!-- Certifications section (new one) -->
+    <section class="certifications" id="certifications">
+        <div class="certification-box">
+            <div class="cert cert1">
+                <img src="./media/logos/pbi-cert.png" alt="Power Bi Certification">
+            </div>
+            <div class="cert cert2">
+                <img src="./media/logos/data-cert.png" alt="azure Data Certification">
+            </div>
+            <div class="cert cert3">
+                <img src="./media/logos/azure-cert.png" alt="Azure Cloud Certification">
+            </div>
+            <div class="cert cert4">
+                <img src="./media/logos/power-cert.png" alt="Power Apps Certification">
+            </div>
+        </div>
+    </section>
+
+    <!--Expertise section-->
+    <section class="expertise" id="expertise">
+        <div class="textWrap" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+            <h3>expertise</h3>
+            <p>
+                I began my career as a React Developer, building dynamic and user-friendly web applications. Transitioning into data analytics, I leveraged my technical background and analytical skills to derive actionable insights from data. My work at TCS focuses on optimizing supply chain processes and enhancing sales strategies through advanced data analysis.
+                <br>
+                <br>
+                My journey into the world of data analytics and business intelligence began with a deep interest in understanding and managing data. I started with foundational knowledge from the "Data Warehouse Toolkit" by Ralph Kimball, which provided me with a solid understanding of data warehousing concepts and best practices. 
+                <br>
+                <br>
+                To further enhance my skills, I utilized Microsoft Learn resources and completed various Udemy courses, which offered practical, hands-on experience with the latest tools and technologies. This self-driven learning approach was complemented by extensive on-the-job experience, allowing me to tackle real-time data challenges and continuously improve my expertise.
+                <br>
+                <br>
+                Throughout my career, I have developed a robust skill set in Advanced SQL, Power BI, Advanced DAX, Python, Azure Cloud, and Microsoft Fabric tools. These skills have enabled me to create efficient data pipelines, develop insightful dashboards, and implement scalable data solutions in the cloud. My ability to learn quickly and apply new technologies effectively has been instrumental in my success as a data analyst and engineer.
+            </p>
+            </div>
+        <div class="dropdown">
+            <div class="accordion">
+                <div class="first-acc acc" id="first-acc" data-aos="fade-top">
+                    <div class="drop" id="down1">
+                        <h1><span>01</span> . Advanced SQL</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow">
+                    </div>
+                    <p class="down1">With expertise in Advanced SQL, I have developed complex queries and optimized database performance for large-scale data operations. My skills include writing efficient joins, subqueries, and stored procedures to manage and manipulate data effectively. I am proficient in data modeling and normalization, ensuring data integrity and consistency across various systems.</p>
+                </div>
+                <div class="second-acc acc" id="second-acc" data-aos="fade-top" data-aos-delay="50">
+                    <div class="drop" id="down2">
+                        <h1><span>02</span> . Power BI</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow">
+                    </div>
+                    <p class="down2">As a Power BI specialist, I create interactive and insightful dashboards that transform raw data into meaningful business intelligence. I excel in data visualization, report creation, and real-time data analysis, enabling stakeholders to make informed decisions. My experience includes connecting to various data sources, data transformation, and implementing DAX for advanced calculations.
+                    </p>
+                </div>
+                <div class="third-acc acc" id="third-acc" data-aos="fade-top" data-aos-delay="100">
+                    <div class="drop" id="down3">
+                        <h1><span>03</span> . Advanced DAX</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow">
+                    </div>
+                    <p class="down3">I have mastered Advanced DAX (Data Analysis Expressions) to perform complex calculations and data analysis in Power BI. My proficiency in DAX allows me to create sophisticated measures, calculated columns, and tables that drive deep insights. I use DAX to solve intricate business problems and optimize report performance, ensuring accurate and fast data retrieval.
+                    </p>
+                </div>
+                <div class="fifth-acc acc" id="fifth-acc" data-aos="fade-top" data-aos-delay="200">
+                    <div class="drop" id="down4">
+                        <h1><span>04</span> . Python</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow">
+                    </div>
+                    <p class="down5">With a strong command of Python, I automate data processing tasks, perform statistical analysis, and develop machine learning models. My expertise includes using libraries such as Pandas, NumPy, and Scikit-learn to manipulate and analyze large datasets. I also develop custom scripts to streamline workflows and integrate data from multiple sources.
+                    </p>
+                </div>
+                <div class="sixth-acc acc" id="sixth-acc" data-aos="fade-top" data-aos-delay="250">
+                    <div class="drop" id="down5">
+                        <h1><span>05</span> . Azure Cloud</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow">
+                    </div>
+                    <p class="down6">Leveraging Azure Cloud, I deploy and manage scalable data solutions in the cloud. My experience includes using Azure Data Factory for ETL processes, Azure SQL Database for database management, and Azure Machine Learning for predictive analytics. I am skilled in implementing cloud-based architectures that ensure high availability, security, and performance.
+                    </p>
+                </div>
+                <div class="seventh-acc acc" id="seventh-acc" data-aos="fade-top" data-aos-delay="300">
+                    <div class="drop" id="down5">
+                        <h1><span>06</span> . Git & Version Control</h1>
+                        <img src="./media/icon-arrow.svg" alt="down-arrow">
+                    </div>
+                    <p class="down6">Proficient in Git and version control systems, I manage and track code changes efficiently, ensuring seamless collaboration among development teams. My skills include branching, merging, and resolving conflicts, which helps maintain a clean and organized codebase. I have experience using platforms like GitHub and GitLab for repository hosting, issue tracking, and continuous integration, enhancing project workflow and productivity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--projects page-->
+    <section class="projects" id="projects">
+        <div class="textWrap" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+            <h3>My work</h3>
+            <p>A selection of recent projects I have worked on...</p>
+        </div>
+        <div class="projects-cont">
+            <div class="card project00" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                <span class="sale-tag">&#8377; For Sale</span>
+                <div class="hover-card">
+                    <div class="title">
+                        <h3>Online learning Platform</h3>
+                        <h5>E-learning site</h5>
+                    </div>
+                    <p>+</p>
+                    <div class="wrap">
+                        <a href="https://99trivia-landing.vercel.app/" target="_blank">visit site</a>
+                        <a href="https://www.linkedin.com/in/siva-kumar-katari-25519919a/" target="_blank">contact to purchase</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                <span class="sale-tag">&#8377; For Sale</span>
+                <div class="hover-card">
+                    <div class="title">
+                        <h3>Srizon Stores</h3>
+                        <h5>Ecommerce App</h5>
+                    </div>
+                    <p>+</p>
+                    <div class="wrap">
+                        <a href="https://srizon.netlify.app/" target="_blank">visit site</a>
+                        <a href="https://www.linkedin.com/in/siva-kumar-katari-25519919a/" target="_blank">contact to purchase</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project01" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                <div class="hover-card">
+                    <div class="title">
+                        <h3>Spudg Blogging Site</h3>
+                        <h5>Under Construction</h5>
+                    </div>
+                    <p>+</p>
+                    <div class="wrap">
+                        <a href="https://spudgblog.netlify.app/home" target="_blank">visit site</a>
+                        <a href="https://github.com/sivakumarkatari2020/blog-proj" target="_blank">code link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project1" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                <div class="hover-card">
+                    <div class="title">
+                        <h3>ip address tracker</h3>
+                        <h5>letleaf api</h5>
+                    </div>
+                    <p>+</p>
+                    <div class="wrap">
+                        <a href="https://ip-address-tracker01.netlify.app/" target="_blank">visit site</a>
+                        <a href="https://github.com/sivakumarkatari2020/ip-address-tracker" target="_blank">code link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                <div class="hover-card">
+                    <div class="title">
+                        <h3>todo list app</h3>
+                        <h5>double themed</h5>
+                    </div>
+                    <p>+</p>
+                    <div class="wrap">
+                        <a href="https://mytodo-list01.netlify.app/" target="_blank">visit site</a>
+                        <a href="https://github.com/sivakumarkatari2020/todo-list-app" target="_blank">code link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                <div class="hover-card">
+                    <div class="title">
+                        <h3>calculator</h3>
+                        <h5>3 level theme switcher</h5>
+                    </div>
+                    <p>+</p>
+                    <div class="wrap">
+                        <a href="https://calculator-app-3fe8c.web.app/" target="_blank">visit site</a>
+                        <a href="https://github.com/sivakumarkatari2020/calculator-app" target="_blank">code link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                <div class="hover-card">
+                    <div class="title">
+                        <h3>loop studios landing page</h3>
+                        <h5>react</h5>
+                    </div>
+                    <p>+</p>
+                    <div class="wrap">
+                        <a href="https://loopstudios01.netlify.app/" target="_blank">visit site</a>
+                        <a href="https://github.com/sivakumarkatari2020/loopstudios-landing-page" target="_blank">code link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card project5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                <div class="hover-card">
+                    <div class="title">
+                        <h3>crowd funding landing page</h3>
+                        <h5>react</h5>
+                    </div>
+                    <p>+</p>
+                    <div class="wrap">
+                        <a href="https://crowd-funding-landing-page.netlify.app/" target="_blank">visit site</a>
+                        <a href="https://github.com/sivakumarkatari2020/crowdfunding-product-page-using-react" target="_blank">code link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact page-->
+    <section class="ping" id="ping">
+        <div class="quote">Data is the new oil, but insight is the true currency.</div>
+        <div class="conclusions">
+            <p>Feel free to reach out to me for any queries, collaborations, or opportunities. Let's connect!</p>
+            <p>ping me on </p>
+            <div class="social-media">
+                <a href="https://join.skype.com/invite/wCfaP726hJ0l" target="_blank"><i class="fas fa-phone-volume"></i></a>
+                <a href="https://twitter.com/SivaKumarKatar2" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/web_surfers_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/siva-kumar-katari-25519919a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sivakumarkatari2020" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="or-sep"><span></span><span class="or-text">OR</span><span></span></p>
+            <div class="email-box">
+                <a href="mailto:websurfers.dev@gmail.com?subject=Want to work with you" id="email">
+                    <img src="./media/gmail.svg" alt="gmail">
+                    <p class="email-text">write an email to me</p>
+                    <!--<div class="cover">
+                        <img src="./media/gmail.svg" alt="">
+                        <p class="email-text">write an email to me</p>
+                    </div>-->
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--Script for cursor tracker-->
+    <script>
+        let cursor = document.querySelector('.cursor');
+        let cursor2 = document.querySelector('.cursor2');
+        document.addEventListener("mousemove",function(e){
+            cursor.style.cssText = "left: "+ (e.clientX + 13) + "px; top: " + (e.clientY + 13) + "px;"
+            cursor2.style.cssText = "left: "+ (e.clientX + 20) + "px; top: " + (e.clientY + 20) + "px;"
+        })
+    </script>
+    <script src="./scripts/parallax.js"></script>
+    <script src="./scripts/AOS.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
