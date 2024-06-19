@@ -58,3 +58,19 @@ for(let i=0;i<mobLinks.length;i++){
         }
     })
 }
+
+let tbuttonOn = document.getElementById('projectsOn');
+let tbuttonOff = document.getElementById('projectsOff');
+let projectsCont = document.getElementById('projectsCont');
+
+tbuttonOn.addEventListener('click',() => {
+    projectsCont.style.display = 'flex';
+    tbuttonOff.style.display = 'flex';
+    tbuttonOn.style.display = 'none';
+})
+
+tbuttonOff.addEventListener('click', () => {
+    projectsCont.style.display = 'none';
+    tbuttonOff.style.display = 'none';
+    tbuttonOn.style.display = 'flex';
+})
