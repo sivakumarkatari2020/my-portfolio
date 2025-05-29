@@ -166,19 +166,20 @@ header .header-content .right{
     width: 50%;
     height: auto;
     min-height: 400px;
+    padding: 6rem;
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 2px 2px;
     grid-auto-flow: row;
     grid-template-areas:
-      "pic1 pic1 pic3 pic3 pic3 pic4 pic4"
-      "pic1 pic1 pic3 pic3 pic3 pic4 pic4"
-      "pic1 pic1 pic5 pic5 pic5 pic4 pic4"
-      "pic2 pic2 pic5 pic5 pic5 pic7 pic7"
-      "pic2 pic2 pic6 pic6 pic6 pic7 pic7"
-      "pic2 pic2 pic6 pic6 pic6 pic7 pic7";
+      "pic3 pic3 pic3 pic1 pic1"
+      "pic3 pic3 pic3 pic1 pic1"
+      "pic5 pic5 pic5 pic1 pic1"
+      "pic5 pic5 pic5 pic7 pic7"
+      "pic6 pic6 pic6 pic7 pic7"
+      "pic6 pic6 pic6 pic7 pic7";
   }
 .header-content .right .pic{
     background-color: #F3F3F3;
@@ -248,6 +249,7 @@ header .header-content .right{
     header .header-content .right{
         width: 100%;
         margin-top: 2rem;
+        padding: 2rem;
     }
 }
 
@@ -274,11 +276,11 @@ header .header-content .right{
 
 .about{
     padding: 5rem 0;
-    padding-top: calc(5rem + 50px);
+    padding-top: calc(3rem + 50px);
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .about > div{
     width: 50%;
@@ -303,18 +305,27 @@ header .header-content .right{
 }
 .about .part1 .text{
     width: 90%;
-    max-width: 500px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.part1 .text .salutation{
+    width: 90%;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
 }
 .part1 .text .hi{
     width: auto;
     min-width: 70px;
     height: 50px;
     padding: 1rem;
+    margin-right: 1rem;
     background-color: #4188FF;
     border-radius: 50px;
     margin-bottom: 1rem;
@@ -337,28 +348,24 @@ header .header-content .right{
 .part1 .hi .p{
     color: #F3F3F3;
     font-family: 'Roboto',sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 .part1 .text h1{
     color: #2E282A;
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    margin-bottom: 4rem;
+    /*margin-bottom: 4rem;*/
+    margin-bottom: 1rem;
     line-height: 100%;
 }
 .part1 .text p{
     color: #2E282A;
     max-width: 500px;
-    font-size: 1rem;
 }
 @media (max-width : 480px){
     .part1 .text h1{
         font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-    .part1 .text p{
-        font-size: 1rem;
     }
 }
 .about .part2{
@@ -1174,7 +1181,7 @@ header .header-content .right{
 }
 .ping .quote{
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
     font-family: "Playwrite NL", serif;
 }
@@ -1281,9 +1288,13 @@ header .header-content .right{
     text-decoration: none;
     font-weight: 700;
     overflow: hidden;
+
+    background-color: #FFFFFF;
+    color: #4188FF;
 }
 #email p{
     color: #FFFFFF;
+    color: #4188FF;
 }
 @media (max-width : 480px){
     #email p{
